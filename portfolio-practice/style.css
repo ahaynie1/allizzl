@@ -1,0 +1,89 @@
+body {
+  background: #f2c744;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(1fr, 2);
+  grid-template-rows: repeat(3, auto);
+  gap: 1rem;
+  grid-column-gap: 6rem;
+  align-items: center;
+  justify-content: center;
+}
+
+#L {
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+
+#R {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+
+/* #arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: lightblue;
+} */
+/* TYPE  */
+
+h1 {
+  color: #000;
+
+  /* Big! */
+  font-family: Author;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+h2 {
+  color: #000;
+  font-family: Author;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 596;
+  line-height: normal;
+}
+p {
+  color: #000;
+  font-family: Author;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 375;
+  line-height: normal;
+}
+
+ul {
+  list-style-type: none;
+  color: #000;
+  font-family: Author;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#arrow {
+}
+
+/* PORTFOLIO ITEMS */
+
+.gallery {
+  display: flex;
+  justify-content: space-between; /* Distribute space between items */
+  align-items: stretch; /* Stretch items vertically */
+  flex-wrap: wrap; /* Allow items to wrap to the next row */
+  margin: 0 10px;
+}
+
+.gallery-item {
+  flex: 0 0 calc(33.333% - 20px);
+  max-width: calc(33.333% - 20px); /* Adjust the max-width */
+  margin: 10px; /* Margin between flex items */
+  position: relative;
+  box-sizing: border-box; /* Include padding and border in the item's width */
+}
