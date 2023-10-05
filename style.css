@@ -162,7 +162,9 @@ ul {
 .gallery-item {
   flex: 0 0 calc(33.333% - 20px);
   max-width: calc(33.333% - 20px);
-  /* Adjust the max-width */
+
+  /* Fill the entire width of the container */
+
   margin: 10px;
   /* Margin between flex items */
   position: relative;
