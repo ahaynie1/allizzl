@@ -1,5 +1,6 @@
 body {
-  background-image: linear-gradient(#f2c744, #006C67);
+  /* background-image: linear-gradient(#f2c744, #006C67); */
+  background: #f2c744;
 }
 
 /* #typing {
