@@ -11,3 +11,5 @@ document.addEventListener("DOMContentLoaded", function () {
     mainContent.scrollIntoView({ behavior: "smooth" });
   });
 });
+
+new CircleType(document.getElementById("circletype"));
