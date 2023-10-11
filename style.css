@@ -8,6 +8,7 @@ body {
 nav ul {
   display: flex;
   flex-direction: row;
+  align-items: flex-end;
 }
 
 .grid-container {
