@@ -205,7 +205,9 @@ p {
   /* Include padding and border in the item's width */
 }
 
-
+#circletype {
+  text-decoration: none;
+}
 
 /* special styles for about page  */
 .headshot {
