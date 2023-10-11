@@ -203,3 +203,10 @@ p {
   box-sizing: border-box;
   /* Include padding and border in the item's width */
 }
+
+
+
+/* special styles for about page  */
+.headshot {
+  max-width: 500px;
+}
