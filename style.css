@@ -2,6 +2,10 @@ body {
   background: #f2c744;
 }
 
+/* #typing {
+  animation: typing 5s steps(22) 1s infinite alternate;
+} */
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(1fr, 2);
