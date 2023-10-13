@@ -138,6 +138,16 @@ span:nth-child(4) {
   transform: rotate(-225deg);
 }
 
+.overlap {
+  display: grid;
+  grid-template: 1fr / 1fr;
+}
+
+#arrow #circletype {
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+
 h1 {
   color: #000;
 
