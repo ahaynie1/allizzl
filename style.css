@@ -58,15 +58,7 @@ nav a {
 
 /* #arrow styles */
 
-#arrow {
-  /* display: flex;
-  align-items: center;
-  flex-direction: column; */
-  /* margin-top: -2rem; */
-  grid-row: 1;
-  grid-column: 1;
-  position: relative;
-}
+
 
 
 .center-con {
@@ -84,7 +76,7 @@ nav a {
   border-radius: 100%;
 }
 
-span {
+.round span {
   z-index: 999;
   height: 3px;
   margin: 1px;
@@ -141,11 +133,7 @@ span:nth-child(4) {
   transform: rotate(-225deg);
 }
 
-.overlap {
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr;
-}
+
 
 
 h1 {
@@ -215,11 +203,28 @@ p {
   /* Include padding and border in the item's width */
 }
 
+.overlap {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+}
+
 #circletype {
-  text-decoration: none;
   grid-column: 1;
   grid-row: 1;
   position: relative;
+  font-size: .75rem;
+  align-self: center;
+
+}
+
+#arrow {
+  /* margin-top: -2rem; */
+  grid-row: 1;
+  grid-column: 1;
+  position: relative;
+  align-self: center;
+
 }
 
 /* special styles for about page  */
