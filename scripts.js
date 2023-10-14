@@ -10,4 +10,4 @@ document.addEventListener("DOMContentLoaded", function () {
     mainContent.scrollIntoView({ behavior: "smooth" });
   });
 });
-new CircleType(document.getElementById("circletype")).radius(5);
+new CircleType(document.getElementById("circletype")).radius(10);
