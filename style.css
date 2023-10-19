@@ -43,6 +43,7 @@ nav a {
   grid-column-gap: 6rem;
   align-items: center;
   justify-content: center;
+  max-width: 80vh;
 }
 
 .L {
