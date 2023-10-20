@@ -209,6 +209,7 @@ p {
   position: relative;
   box-sizing: border-box;
   /* Include padding and border in the item's width */
+
 }
 
 .overlap {
