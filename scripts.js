@@ -1,4 +1,5 @@
 console.log("scripts.js loaded");
+
 document.addEventListener("DOMContentLoaded", function () {
   // Get a reference to the button with id "arrow" and the main content with id "gallery"
   const scrollButton = document.getElementById("arrow");
@@ -9,5 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Use the `scrollIntoView` method to scroll to the main content
     mainContent.scrollIntoView({ behavior: "smooth" });
   });
+
+  // Initialize Circletype after the DOM has loaded
+  new CircleType(document.getElementById("circletype"));
 });
-new CircleType(document.getElementById("circletype"));
