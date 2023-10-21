@@ -9,6 +9,10 @@ body {
   animation: typing 5s steps(22) 1s infinite alternate;
 } */
 
+.current-page {
+  text-decoration: underline orchid;
+}
+
 h3 {
   list-style-type: none;
 
