@@ -5,6 +5,17 @@ body {
   font-family: author;
 }
 
+.resume-container {
+  display: flex;
+  flex-direction: inline;
+  flex-wrap: wrap;
+  margin: 5%;
+}
+
+.resume-container div {
+  max-width: 400px;
+}
+
 /* #typing {
   animation: typing 5s steps(22) 1s infinite alternate;
 } */
