@@ -311,5 +311,7 @@ p {
 }
 
 .page-title {
-  margin-left: 1rem;
+  display: flex;
+  margin-left: 10%;
+  margin-bottom: -5%;
 }
