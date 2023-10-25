@@ -21,6 +21,10 @@ body {
   margin: 1rem;
 }
 
+.resume-container li {
+  list-style-type: circle;
+}
+
 /* #typing {
   animation: typing 5s steps(22) 1s infinite alternate;
 } */
