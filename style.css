@@ -55,12 +55,12 @@ nav {
   margin-right: 10px;
 }
 
-#icons {
+.icons {
   display: flex;
 }
 
-#icons img {
-  width: 3rem;
+.icons img {
+  height: 3rem;
   margin: .5rem;
 }
 
@@ -304,4 +304,8 @@ p {
 /*  styles for about page  */
 .headshot {
   max-width: 500px;
+}
+
+.page-title {
+  margin-left: 1rem;
 }
