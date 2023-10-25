@@ -8,3 +8,4 @@ My updated Design portfolio website (coming soon!)
 - Some CSS written through discussion with [#] ChatGPT
 - JS event listener for scrolling on click was also written by ChatGPT
 - Circle type by Copyright © 2014-2020 Peter Hrynkow, Licensed MIT
+- Resume Skills icons from Wikimedia Commons
