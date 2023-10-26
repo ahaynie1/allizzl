@@ -33,10 +33,8 @@ body {
   text-decoration: underline orchid;
 }
 
-h3 {
-  list-style-type: none;
 
-}
+
 
 h4 {
   font-family: author;
@@ -151,7 +149,7 @@ nav a {
   transition: 0.4s ease;
 }
 
-span:first-child {
+.round span:first-child {
   display: block;
   position: absolute;
   transform: rotate(45deg);
@@ -230,6 +228,10 @@ p {
   font-weight: 375;
   line-height: normal;
 }
+
+/* .deemph {
+  font-weight: 300;
+} */
 
 .bodycopy {
   color: #000;
