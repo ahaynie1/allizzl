@@ -42,12 +42,12 @@ h4 {
   font-family: author;
   font-weight: 300;
   font-size: 1rem;
-
+  margin-top: -1rem;
 }
 
 h5 {
   font-family: author;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 1rem;
 }
 
@@ -231,6 +231,14 @@ p {
   line-height: normal;
 }
 
+.bodycopy {
+  color: #000;
+  font-family: Author;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 375;
+  line-height: normal;
+}
 
 #niche {
   list-style-type: none;
