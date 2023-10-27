@@ -5,25 +5,26 @@ document.addEventListener("DOMContentLoaded", function () {
   const scrollButton = document.getElementById("arrow");
   const mainContent = document.getElementById("gallery");
 
+  console.log("scripts.js loaded");
   // Add a click event listener to the button
   scrollButton.addEventListener("click", function () {
     // Use the `scrollIntoView` method to scroll to the main content
     mainContent.scrollIntoView({ behavior: "smooth" });
   });
-
-  $(document).ready(function() {
+  console.log("scripts.js loaded");
+  $(document).ready(function () {
     // Usage code for the "circleText" plugin
-    $('.circle').circleText({
-        padding: 10,
-        glue: " ",
-        turn: true,
-        duration: 10,
-        repeat: 1,
-        radius: 100,
-        background: "white",
-        rounded: true,
-        content: "Hello, Circle Text!",
-        reverse: false
+    $(".circle").circleText({
+      padding: 10,
+      glue: " ",
+      turn: true,
+      duration: 20,
+      repeat: 1,
+      radius: 100,
+      rounded: true,
+      content: "scroll to see my work!",
+      reverse: true,
     });
+    console.log("scripts.js loaded");
+  });
 });
-//   new CircleType(document.getElementById("circletype"));
