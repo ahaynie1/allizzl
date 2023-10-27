@@ -11,10 +11,19 @@ document.addEventListener("DOMContentLoaded", function () {
     mainContent.scrollIntoView({ behavior: "smooth" });
   });
 
-  $(".circle").circleText({
-    turn: true,
-      duration: 10// in seconds
+  $(document).ready(function() {
+    // Usage code for the "circleText" plugin
+    $('.circle').circleText({
+        padding: 10,
+        glue: " ",
+        turn: true,
+        duration: 10,
+        repeat: 1,
+        radius: 100,
+        background: "white",
+        rounded: true,
+        content: "Hello, Circle Text!",
+        reverse: false
     });
-    
- 
+});
 //   new CircleType(document.getElementById("circletype"));
