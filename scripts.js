@@ -11,6 +11,10 @@ document.addEventListener("DOMContentLoaded", function () {
     mainContent.scrollIntoView({ behavior: "smooth" });
   });
 
-  // Initialize Circletype after the DOM has loaded
-  new CircleType(document.getElementById("circletype"));
-});
+  $(".circle").circleText({
+    turn: true,
+      duration: 10// in seconds
+    });
+    
+ 
+//   new CircleType(document.getElementById("circletype"));

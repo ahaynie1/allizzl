@@ -1,0 +1,19 @@
+{
+  "name": "circle-text",
+  "version": "1.2.1",
+  "description": "A simple plugin to create curved text following circle.",
+  "main": "circleText.js",
+  "homepage" : "https://github.com/bable3/circle-text",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "circle",
+    "text"
+  ],
+  "author": "François Faucon",
+  "license": "MIT",
+  "peerDependencies": {
+    "jquery": ">=1.8.0"
+  }
+}
