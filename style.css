@@ -283,12 +283,13 @@ p {
 }
 
 .overlap {
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
-/* @keyframes rotateCounterclockwise {
+@keyframes rotateCounterclockwise {
   from {
     transform: rotate(0deg);
   }
@@ -296,27 +297,32 @@ p {
   to {
     transform: rotate(-360deg);
   }
-} */
+}
 
 
 
 .circle {
-  grid-column: 1;
-  grid-row: 1;
-  position: relative;
-  z-index: 1;
-  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+  display: flex;
   justify-content: center;
-  font-family: Author;
-  color: #fff;
 
-  /* animation: rotateCounterclockwise 15s linear infinite */
+  /* animation: rotateCounterclockwise 15s linear infinite; */
 }
 
-#arrow {
-  grid-row: 1;
-  grid-column: 1;
+/* Center the text horizontally */
+/* display: flex;
+  align-items: center;
   position: relative;
+  justify-content: center; */
+
+/* animation: rotateCounterclockwise 15s linear infinite */
+
+
+#arrow {
+  flex: 1;
+  height: 100px;
+  position: absolute;
   z-index: 2;
 }
 

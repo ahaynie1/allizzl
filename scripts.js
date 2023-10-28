@@ -15,12 +15,12 @@ document.addEventListener("DOMContentLoaded", function () {
   $(document).ready(function () {
     // Usage code for the "circleText" plugin
     $(".circle").circleText({
-      padding: 10,
+      padding: 34,
       glue: " ",
       turn: true,
       duration: 20,
       repeat: 1,
-      // radius: 100,
+      radius: 100,
       rounded: true,
       content: "scroll to see my work!",
       reverse: true,
