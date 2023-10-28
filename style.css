@@ -93,9 +93,7 @@ nav a {
   grid-template-rows: repeat(3, auto);
   gap: 1rem;
   grid-column-gap: 6rem;
-  align-items: center;
-  /* justify-content: center; */
-
+  /* align-items: center; */
   max-width: 80%;
   margin: 0 auto;
 }
