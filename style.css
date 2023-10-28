@@ -288,7 +288,7 @@ p {
   grid-template-columns: 1fr;
 }
 
-@keyframes rotateCounterclockwise {
+/* @keyframes rotateCounterclockwise {
   from {
     transform: rotate(0deg);
   }
@@ -296,15 +296,14 @@ p {
   to {
     transform: rotate(-360deg);
   }
-}
+} */
 
 
 
 .circle {
   grid-column: 1;
   grid-row: 1;
-  position: relative;
-  align-self: center;
+  position: absolute;
   font-family: Author;
   color: #fff;
 
@@ -314,8 +313,7 @@ p {
 #arrow {
   grid-row: 1;
   grid-column: 1;
-  position: relative;
-  align-self: center;
+  position: absolute;
   z-index: 1;
 }
 
