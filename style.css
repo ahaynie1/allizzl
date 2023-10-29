@@ -280,6 +280,10 @@ p {
 
 }
 
+.case-image {
+  width: 80%;
+}
+
 .overlap {
   display: flex;
   align-items: center;
@@ -333,4 +337,16 @@ p {
   display: flex;
   margin-left: 10%;
   margin-bottom: -5%;
+}
+
+.case-study {
+  display: flex;
+  flex-direction: column;
+  margin: 10%;
+  align-items: center;
+  justify-content: center;
+}
+
+.case-study * {
+  padding: 2rem;
 }
