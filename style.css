@@ -266,6 +266,13 @@ p {
   /* background: #2E2D4D; */
 }
 
+/* MEDIA QUERIES FOR MOBILE */
+/* @media (max-width: 500px) {
+  #gallery {
+    flex-direction: column;
+
+  } */
+
 .gallery-item {
   flex: 0 0 calc(33.333% - 20px);
   max-width: calc(33.333% - 20px);
@@ -282,7 +289,7 @@ p {
 }
 
 .gallery-item:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .gallery-item img {
