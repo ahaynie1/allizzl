@@ -276,8 +276,13 @@ p {
   /* Margin between flex items */
   position: relative;
   box-sizing: border-box;
+  transition: .2s ease-in;
   /* Include padding and border in the item's width */
 
+}
+
+.gallery-item:hover {
+  transform: scale(1.1);
 }
 
 .gallery-item img {
