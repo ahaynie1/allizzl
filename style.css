@@ -280,6 +280,10 @@ p {
 
 }
 
+.gallery-item img {
+  max-width: 100%;
+}
+
 .case-image {
   width: 80%;
 }
