@@ -366,3 +366,8 @@ p {
 .case-study * {
   padding: 2rem;
 }
+
+.photo-caption {
+  font-weight: 200;
+  font-size: 1.5rem;
+}
