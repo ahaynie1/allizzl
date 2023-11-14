@@ -379,17 +379,30 @@ p {
 
 .case-study {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin: 10%;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  /* justify-content: center; */
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .case-study * {
   padding: 2rem;
 }
 
-.photo-caption {
+.caption {
   font-weight: 200;
   font-size: 1.5rem;
+}
+
+.tools {
+  font-family: author;
+  font-weight: 300;
+  font-size: 1rem;
+  margin-top: -4rem;
 }
