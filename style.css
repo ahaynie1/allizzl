@@ -367,6 +367,10 @@ p {
   margin-bottom: 2rem;
 }
 
+.headshot-v {
+  max-height: 60%;
+}
+
 
 .about-content {
   margin-left: 2rem;
