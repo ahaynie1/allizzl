@@ -22,7 +22,7 @@ body {
   grid-template-rows: auto;
   margin-left: 5%;
   margin-right: 5%;
-  gap: 1rem;
+  gap: 4rem;
 }
 
 
@@ -367,8 +367,8 @@ p {
   margin-bottom: 2rem;
 }
 
-.headshot-v {
-  max-height: 60%;
+.v {
+  max-height: 80%;
 }
 
 
