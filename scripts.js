@@ -5,13 +5,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const scrollButton = document.getElementById("arrow");
   const mainContent = document.getElementById("gallery");
 
-  console.log("scripts.js loaded");
   // Add a click event listener to the button
   scrollButton.addEventListener("click", function () {
     // Use the `scrollIntoView` method to scroll to the main content
     mainContent.scrollIntoView({ behavior: "smooth" });
   });
-  console.log("scripts.js loaded");
   $(document).ready(function () {
     // Usage code for the "circleText" plugin
     $(".circle").circleText({
@@ -25,6 +23,12 @@ document.addEventListener("DOMContentLoaded", function () {
       content: "scroll to see my work!",
       reverse: true,
     });
-    console.log("scripts.js loaded");
+  });
+  // widow adjust usage
+  wt.fix({
+    elements: "p li ul h1 h2 h3 h4 h5",
+    chars: 20,
+    method: "padding-right",
+    event: "resize",
   });
 });
