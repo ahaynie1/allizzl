@@ -68,6 +68,14 @@ h5 {
   font-size: 1rem;
 }
 
+h6 {
+  font-family: author;
+  font-weight: 300;
+  font-size: 1rem;
+  font-style: italic;
+  /* margin-top: -5rem; */
+}
+
 nav {
   display: flex;
   flex-direction: row;
@@ -414,7 +422,12 @@ p {
 }
 
 .case-study * {
-  padding: 2rem;
+  padding-right: 2rem;
+  margin-bottom: -1rem;
+}
+
+.case-title {
+  margin-bottom: -1.5rem;
 }
 
 .caption {
@@ -426,6 +439,7 @@ p {
   font-family: author;
   font-weight: 300;
   font-size: 1rem;
-  margin-top: -4rem;
-  margin-bottom: -2.5rem;
+  margin-bottom: 1rem;
+  /* margin-top: -4rem;
+  margin-bottom: -2.5rem; */
 }
