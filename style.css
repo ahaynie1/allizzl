@@ -94,6 +94,16 @@ nav {
   margin: .5rem;
 }
 
+.nav-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-icons img {
+  height: 2rem;
+}
+
 ul {
   list-style-type: none;
 }
