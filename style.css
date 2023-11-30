@@ -475,3 +475,16 @@ p {
   width: calc(50%);
   padding: 2rem;
 } */
+
+#downloadprompt {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 20%;
+  padding-top: 1.5rem;
+}
+
+/* 
+.page-header {
+  display: flex;
+  align-items: center;
+} */
