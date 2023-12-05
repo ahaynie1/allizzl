@@ -318,26 +318,14 @@ p {
   /* background: #2E2D4D; */
 }
 
-/* MEDIA QUERIES FOR MOBILE */
-/* @media (max-width: 500px) {
-  #gallery {
-    flex-direction: column;
-
-  } */
 
 .gallery-item {
   flex: 0 0 calc(33.333% - 20px);
   max-width: calc(33.333% - 20px);
-
-  /* Fill the entire width of the container */
-
   margin: 10px;
-  /* Margin between flex items */
   position: relative;
   box-sizing: border-box;
   transition: .2s ease-in;
-  /* Include padding and border in the item's width */
-
 }
 
 .gallery-item:hover {
@@ -488,3 +476,22 @@ p {
   display: flex;
   align-items: center;
 } */
+
+
+/* BELOW THIS POINT ARE ALL MEDIA QUERY STYLES */
+
+/* MOBILE STYLES */
+@media only screen and (max-width: 767px) {
+
+  /* gallery page mobile layout */
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* about page mobile layout */
+
+  /* resume page mobile layout */
+
+}
