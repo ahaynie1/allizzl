@@ -483,6 +483,10 @@ p {
 /* MOBILE STYLES */
 @media only screen and (max-width: 767px) {
 
+  body {
+    font-family: author;
+  }
+
   /* gallery page mobile layout */
   .grid-container {
     display: flex;
