@@ -487,6 +487,10 @@ p {
     font-family: author;
   }
 
+  #little-alli {
+    max-width: 400px;
+  }
+
   /* gallery page mobile layout */
   .grid-container {
     display: flex;
