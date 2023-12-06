@@ -452,6 +452,11 @@ p {
   box-sizing: border-box;
 }
 
+.case-study li {
+  margin-bottom: .5rem;
+  list-style-type: disc;
+}
+
 .case-title {
   margin-bottom: -1.5rem;
 }
@@ -482,35 +487,40 @@ p {
   padding-top: 1.5rem;
 }
 
-/* 
+iframe {
+  height: 25rem;
+  /* width: calc(50% - 20px); */
+
+
+  /* 
 .page-header {
   display: flex;
   align-items: center;
 } */
 
 
-/* BELOW THIS POINT ARE ALL MEDIA QUERY STYLES */
+  /* BELOW THIS POINT ARE ALL MEDIA QUERY STYLES */
 
-/* MOBILE STYLES */
-@media only screen and (max-width: 767px) {
+  /* MOBILE STYLES */
+  @media only screen and (max-width: 767px) {
 
-  body {
-    font-family: author;
+    body {
+      font-family: Author-Regular;
+    }
+
+    #little-alli {
+      max-width: 400px;
+    }
+
+    /* gallery page mobile layout */
+    .grid-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* about page mobile layout */
+
+    /* resume page mobile layout */
+
   }
-
-  #little-alli {
-    max-width: 400px;
-  }
-
-  /* gallery page mobile layout */
-  .grid-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  /* about page mobile layout */
-
-  /* resume page mobile layout */
-
-}
