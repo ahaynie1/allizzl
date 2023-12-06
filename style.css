@@ -502,7 +502,7 @@ iframe {
   /* BELOW THIS POINT ARE ALL MEDIA QUERY STYLES */
 
   /* MOBILE STYLES */
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
 
     /* font size mobile scaling */
     body {
