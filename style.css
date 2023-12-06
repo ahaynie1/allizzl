@@ -505,7 +505,8 @@ iframe {
   @media screen and (max-width: 767px) {
 
     /* font size mobile scaling */
-    body {
+    body,
+    html {
       font-family: Author-Regular;
     }
 
