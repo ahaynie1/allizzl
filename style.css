@@ -507,7 +507,7 @@ iframe {
     /* font size mobile scaling */
     body,
     html {
-      font-family: Author-Regular;
+      font-family: author;
     }
 
     p {
