@@ -504,8 +504,25 @@ iframe {
   /* MOBILE STYLES */
   @media only screen and (max-width: 767px) {
 
+    /* font size mobile scaling */
     body {
       font-family: Author-Regular;
+    }
+
+    p {
+      font-size: 1.25rem;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+    }
+
+    h3 {
+      font-size: .75rem;
     }
 
     #little-alli {
@@ -520,6 +537,17 @@ iframe {
     }
 
     /* about page mobile layout */
+
+
+    /* .about-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      margin-left: 5%;
+      margin-right: 5%;
+      gap: 1rem;
+      align-items: center;
+    } */
 
     /* resume page mobile layout */
 
