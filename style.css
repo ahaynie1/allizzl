@@ -531,11 +531,11 @@ iframe {
     }
 
     /* gallery page mobile layout */
-    .grid-container {
+    /* .grid-container {
       display: flex;
       flex-direction: column;
       align-items: center;
-    }
+    } */
 
     /* about page mobile layout */
 
