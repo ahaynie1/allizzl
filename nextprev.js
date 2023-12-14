@@ -1,76 +1,83 @@
-console.log("Next Previous Buttons script loaded"),
-  // BACK AND FORTH GALLERY BUTTONS
+console.log("Next Previous Buttons script loaded");
 
-  // Function to navigate to the next item
-  function navigateToNextItem() {
-    // Get the current item's position from the URL
-    var currentPosition = getCurrentItemPosition();
+// Function to navigate to the next item
+function navigateToNextItem() {
+  // Get the current item's position from the stored data
+  var currentPosition = getCurrentItemPosition();
 
-    // Log the calculated URL
-    var nextUrl = findItemUrlByPosition(nextPosition);
-    console.log("Next URL:", nextUrl);
+  // Find the next item's position
+  var nextPosition = currentPosition + 1;
 
-    // Check if the URL is valid before navigating
-    if (nextUrl) {
-      window.location.href = nextUrl;
-    } else {
-      // Handle the case where the URL is null
-      console.error("Invalid URL for next item");
+  // Log the calculated URL
+  var nextUrl = findItemUrlByPosition(nextPosition);
+  console.log("Next URL:", nextUrl);
 
-      // Find the next item's position
-      var nextPosition = currentPosition + 1;
+  // Check if the URL is valid before navigating
+  if (nextUrl) {
+    window.location.href = nextUrl;
+  } else {
+    // Handle the case where the URL is null
+    console.error("Invalid URL for next item");
+  }
+}
 
-      // Navigate to the next item
-      window.location.href = findItemUrlByPosition(nextPosition);
-    }
+// Function to navigate to the previous item
+function navigateToPrevItem() {
+  // Get the current item's position from the stored data
+  var currentPosition = getCurrentItemPosition();
 
-    // Function to navigate to the previous item
-    function navigateToPrevItem() {
-      // Get the current item's position from the URL
-      var currentPosition = getCurrentItemPosition();
+  // Find the previous item's position
+  var prevPosition = currentPosition - 1;
 
-      // Find the previous item's position
-      var prevPosition = currentPosition - 1;
+  // Navigate to the previous item
+  window.location.href = findItemUrlByPosition(prevPosition);
+}
 
-      // Navigate to the previous item
-      window.location.href = findItemUrlByPosition(prevPosition);
-    }
-
-    // Add event listeners to arrow buttons
-    document
-      .getElementById("nextButton")
-      .addEventListener("click", navigateToNextItem);
-    document
-      .getElementById("prevButton")
-      .addEventListener("click", navigateToPrevItem);
-  };
-
-// Function to get the current item's position from the HTML
+// Function to get the current item's position from the stored data
 function getCurrentItemPosition() {
-  // Get the current item's element
-  var currentItemElement = document.querySelector(".gallery-item.current");
+  // Retrieve the stored gallery information
+  var storedGalleryInfo = JSON.parse(localStorage.getItem("galleryInfo"));
 
-  // Check if the element is found
-  if (currentItemElement) {
-    // Extract the position from the data-position attribute
-    var currentPosition = parseInt(currentItemElement.dataset.position);
+  // Check if the information is found
+  if (storedGalleryInfo) {
+    // Find the current item's position based on the current URL
+    var currentItemHref = window.location.href;
+    var currentItem = storedGalleryInfo.find(
+      (item) => item.href === currentItemHref
+    );
 
-    // Return the position
-    return currentPosition;
+    // Check if the current item is found
+    if (currentItem) {
+      return currentItem.position;
+    }
   }
 
-  // Return a default value or handle the case when the element is not found
+  // Return a default value or handle the case when the information is not found
   return 1; // Default position (adjust as needed)
 }
 
 // Function to find the item URL based on its position
 function findItemUrlByPosition(position) {
-  var items = document.querySelectorAll(".gallery-item");
-  for (var i = 0; i < items.length; i++) {
-    if (parseInt(items[i].dataset.position) === position) {
-      return items[i].href;
+  // Retrieve the stored gallery information
+  var storedGalleryInfo = JSON.parse(localStorage.getItem("galleryInfo"));
+
+  // Check if the information is found
+  if (storedGalleryInfo) {
+    // Find the item's URL based on its position
+    var item = storedGalleryInfo.find((item) => item.position === position);
+    if (item) {
+      return item.href;
     }
   }
+
   // Handle edge cases, e.g., when the last item is reached
   return null;
 }
+
+// Add event listeners to arrow buttons
+document
+  .getElementById("nextButton")
+  .addEventListener("click", navigateToNextItem);
+document
+  .getElementById("prevButton")
+  .addEventListener("click", navigateToPrevItem);
