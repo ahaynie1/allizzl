@@ -41,6 +41,17 @@ document.addEventListener("DOMContentLoaded", function () {
     // Get the current item's position from the URL
     var currentPosition = getCurrentItemPosition();
 
+     // Log the calculated URL
+     var nextUrl = findItemUrlByPosition(nextPosition);
+     console.log('Next URL:', nextUrl);
+ 
+     // Check if the URL is valid before navigating
+     if (nextUrl) {
+         window.location.href = nextUrl;
+     } else {
+         // Handle the case where the URL is null
+         console.error('Invalid URL for next item');
+         
     // Find the next item's position
     var nextPosition = currentPosition + 1;
 
