@@ -258,7 +258,18 @@ nav a {
 }
 
 
+/* next and prev button styles */
+button {
+  background: none;
+}
 
+#nextButton {
+  rotate: -90deg;
+}
+
+#prevButton {
+  rotate: 90deg;
+}
 
 h1 {
   color: #000;
