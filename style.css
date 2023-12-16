@@ -271,6 +271,31 @@ button {
   rotate: 90deg;
 }
 
+#prevButton span:nth-child(2) {
+  bottom: 45%;
+}
+
+#prevButton span:nth-child(1) {
+  bottom: 45%;
+}
+
+#nextButton span:nth-child(2) {
+  bottom: 45%;
+}
+
+#nextButton span:nth-child(1) {
+  bottom: 45%;
+}
+
+/* 
+button span:first-child {
+  bottom: %
+}
+
+button span:nth-child(2) {
+  bottom: 15%;
+} */
+
 h1 {
   color: #000;
 
@@ -378,6 +403,14 @@ p {
   }
 }
 
+.gallery-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+}
 
 
 .circle {
@@ -507,7 +540,6 @@ iframe {
   display: flex;
   align-items: center;
 } */
-
 
   /* BELOW THIS POINT ARE ALL MEDIA QUERY STYLES */
 
