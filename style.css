@@ -412,6 +412,9 @@ p {
   padding-right: 10%;
 }
 
+.edgecase {
+  flex-direction: row-reverse;
+}
 
 .circle {
   text-align: center;
