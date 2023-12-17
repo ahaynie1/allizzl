@@ -63,6 +63,8 @@ function getCurrentItemPosition() {
 function findItemUrlByPosition(position) {
   // Retrieve the stored gallery information
   var storedGalleryInfo = JSON.parse(localStorage.getItem("galleryInfo"));
+  // Log the stored gallery information to check its content
+  console.log("Stored Gallery Info:", storedGalleryInfo);
 
   // Check if the information is found
   if (storedGalleryInfo) {
