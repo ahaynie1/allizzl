@@ -4,14 +4,17 @@ console.log("Next Previous Buttons script loaded");
 function navigateToNextItem() {
   // Get the current item's position from the stored data
   var currentPosition = getCurrentItemPosition();
+  console.log("Current Position:", currentPosition);
 
   // Find the next item's position
   var nextPosition = currentPosition + 1;
-
+  console.log("next position:", nextPosition);
   // Log the calculated URL
   var nextUrl = findItemUrlByPosition(nextPosition);
   console.log("Next URL:", nextUrl);
 
+  var items = document.querySelectorAll(".gallery-item");
+  console.log("Items:", items);
   // Check if the URL is valid before navigating
   if (nextUrl) {
     window.location.href = nextUrl;
