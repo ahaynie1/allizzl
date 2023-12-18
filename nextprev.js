@@ -1,11 +1,34 @@
+// Next and previous buttons script
+
 console.log("Next Previous Buttons script loaded");
 
+var galleryInfo = [
+  { position: 1, href: "krieger.html" },
+  { position: 2, href: "pinoe.html" },
+  { position: 3, href: "cheyna.html" },
+  { position: 4, href: "swoop-citation.html" },
+  { position: 5, href: "sawebsite.html" },
+  { position: 6, href: "googledoodle.html" },
+  { position: 7, href: "sleepytime-tea.html" },
+  { position: 8, href: "snoopy.html" },
+  { position: 9, href: "snoopy.html" },
+];
+
+// Log the manually embedded galleryInfo array
+console.log("Gallery Info:", galleryInfo);
+
+// Store the galleryInfo array in local storage
+try {
+  localStorage.setItem("galleryInfo", JSON.stringify(galleryInfo));
+  console.log("Gallery Info Stored:", galleryInfo);
+} catch (error) {
+  console.error("Error storing gallery info:", error);
+}
 // Function to navigate to the next item
 function navigateToNextItem() {
   // Get the current item's position from the stored data
   var currentPosition = getCurrentItemPosition();
   console.log("Current Position:", currentPosition);
-
   // Find the next item's position
   var nextPosition = currentPosition + 1;
   console.log("next position:", nextPosition);
@@ -13,8 +36,6 @@ function navigateToNextItem() {
   var nextUrl = findItemUrlByPosition(nextPosition);
   console.log("Next URL:", nextUrl);
 
-  var items = document.querySelectorAll(".gallery-item");
-  console.log("Items:", items);
   // Check if the URL is valid before navigating
   if (nextUrl) {
     window.location.href = nextUrl;
@@ -41,6 +62,8 @@ function getCurrentItemPosition() {
   // Retrieve the stored gallery information
   var storedGalleryInfo = JSON.parse(localStorage.getItem("galleryInfo"));
 
+  // Log the stored gallery information to check its content
+  console.log("Stored Gallery Info:", storedGalleryInfo);
   // Check if the information is found
   if (storedGalleryInfo) {
     // Find the current item's position based on the current URL
@@ -63,8 +86,6 @@ function getCurrentItemPosition() {
 function findItemUrlByPosition(position) {
   // Retrieve the stored gallery information
   var storedGalleryInfo = JSON.parse(localStorage.getItem("galleryInfo"));
-  // Log the stored gallery information to check its content
-  console.log("Stored Gallery Info:", storedGalleryInfo);
 
   // Check if the information is found
   if (storedGalleryInfo) {
