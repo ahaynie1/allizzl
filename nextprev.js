@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var galleryInfo = getGalleryInfo();
     console.log("Gallery Info:", galleryInfo);
 
-    var currentItemHref = window.location.href;
+    var currentItemHref = window.location.pathname.split("/").pop(); // Extracting the last part of the path
     console.log("Current Item Href:", currentItemHref);
 
     var currentItem = galleryInfo.find((item) => item.href === currentItemHref);
@@ -83,10 +83,13 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Add event listeners to arrow buttons
-  document
-    .getElementById("nextButton")
-    .addEventListener("click", navigateToNextItem);
-  document
-    .getElementById("prevButton")
-    .addEventListener("click", navigateToPrevItem);
+  var nextButton = document.getElementById("nextButton");
+  if (nextButton) {
+    nextButton.addEventListener("click", navigateToNextItem);
+  }
+
+  var prevButton = document.getElementById("prevButton");
+  if (prevButton) {
+    prevButton.addEventListener("click", navigateToPrevItem);
+  }
 });
