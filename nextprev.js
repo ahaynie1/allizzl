@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var galleryInfo = [];
 
     galleryItems.forEach(function (item, index) {
-      var position = index;
+      var position = parseInt(item.getAttribute("data-position"));
       var href = item.getAttribute("href");
       galleryInfo.push({ position: position, href: href });
     });
