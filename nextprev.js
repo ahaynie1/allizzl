@@ -3,15 +3,15 @@
 console.log("Next Previous Buttons script loaded");
 
 var galleryInfo = [
-  { position: 1, href: "krieger.html" },
-  { position: 2, href: "pinoe.html" },
-  { position: 3, href: "cheyna.html" },
-  { position: 4, href: "swoop-citation.html" },
-  { position: 5, href: "sawebsite.html" },
-  { position: 6, href: "googledoodle.html" },
-  { position: 7, href: "sleepytime-tea.html" },
+  { position: 0, href: "krieger.html" },
+  { position: 1, href: "pinoe.html" },
+  { position: 2, href: "cheyna.html" },
+  { position: 3, href: "swoop-citation.html" },
+  { position: 4, href: "sawebsite.html" },
+  { position: 5, href: "googledoodle.html" },
+  { position: 6, href: "sleepytime-tea.html" },
+  { position: 7, href: "snoopy.html" },
   { position: 8, href: "snoopy.html" },
-  { position: 9, href: "snoopy.html" },
 ];
 
 // Log the manually embedded galleryInfo array
