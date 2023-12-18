@@ -28,7 +28,6 @@ try {
 function navigateToNextItem() {
   // Get the current item's position from the stored data
   var currentPosition = getCurrentItemPosition();
-  console.log("Current Position:", currentPosition);
   // Find the next item's position
   var nextPosition = currentPosition + 1;
   console.log("next position:", nextPosition);
@@ -77,6 +76,7 @@ function getCurrentItemPosition() {
       return currentItem.position;
     }
   }
+  console.log("Current Position:", currentPosition);
 
   // Return a default value or handle the case when the information is not found
   return 1; // Default position (adjust as needed)
