@@ -113,6 +113,10 @@ function findItemUrlByPosition(position) {
   // Retrieve the stored gallery information
   var storedGalleryInfo = JSON.parse(localStorage.getItem("galleryInfo"));
 
+  // Log the stored gallery information and the position being searched
+  console.log("Stored Gallery Info:", storedGalleryInfo);
+  console.log("Searching for position:", position);
+
   // Check if the information is found
   if (storedGalleryInfo) {
     // Find the item's URL based on its position
@@ -123,6 +127,7 @@ function findItemUrlByPosition(position) {
   }
 
   // Handle edge cases, e.g., when the last item is reached
+  console.error("URL not found for position:", position);
   return null;
 }
 
