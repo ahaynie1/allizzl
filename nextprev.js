@@ -24,6 +24,39 @@ try {
 } catch (error) {
   console.error("Error storing gallery info:", error);
 }
+
+// Function to get the current item's position from the stored data
+function getCurrentItemPosition() {
+  // Retrieve the stored gallery information
+  var storedGalleryInfo = JSON.parse(localStorage.getItem("galleryInfo"));
+
+  // Log the stored gallery information to check its content
+  console.log("Stored Gallery Info:", storedGalleryInfo);
+
+  // Declare currentPosition here
+  var currentPosition;
+
+  // Check if the information is found
+  if (storedGalleryInfo) {
+    // Find the current item's position based on the current URL
+    var currentItemHref = window.location.href;
+    var currentItem = storedGalleryInfo.find(
+      (item) => item.href === currentItemHref
+    );
+
+    // Check if the current item is found
+    if (currentItem) {
+      // Assign the value to currentPosition
+      currentPosition = currentItem.position;
+      return currentPosition;
+    }
+  }
+
+  console.log("Current Position:", currentPosition);
+
+  // Return a default value or handle the case when the information is not found
+  return 1; // Default position (adjust as needed)
+}
 // Function to navigate to the next item
 function navigateToNextItem() {
   // Get the current item's position from the stored data
@@ -76,7 +109,6 @@ function getCurrentItemPosition() {
       return currentItem.position;
     }
   }
-  console.log("Current Position:", currentPosition);
 
   // Return a default value or handle the case when the information is not found
   return 1; // Default position (adjust as needed)
