@@ -2,48 +2,29 @@ document.addEventListener("DOMContentLoaded", function () {
   // Function to retrieve the gallery information from the HTML elements
   function getGalleryInfo() {
     var galleryItems = document.querySelectorAll(".gallery-item");
-    var galleryInfo = [];
+    console.log("Gallery Items:", galleryItems);
 
-    galleryItems.forEach(function (item, index) {
-      var position = parseInt(item.getAttribute("data-position"));
-      var href = item.getAttribute("href");
-      galleryInfo.push({ position: position, href: href });
+    return Array.from(galleryItems).map(function (item) {
+      return {
+        position: parseInt(item.getAttribute("data-position")),
+        href: item.getAttribute("href"),
+      };
     });
-
-    return galleryInfo;
   }
 
-  // Function to navigate to the next item
-  function navigateToNextItem() {
+  // Function to navigate to the next or previous item
+  function navigateToItem(direction) {
     var currentPosition = getCurrentItemPosition();
-    console.log("Current Position:", currentPosition);
+    var newPosition = currentPosition + direction;
+    var newUrl = findItemUrlByPosition(newPosition);
 
-    var nextPosition = currentPosition + 1;
-    console.log("Next Position:", nextPosition);
-
-    var nextUrl = findItemUrlByPosition(nextPosition);
-    console.log("Next URL:", nextUrl);
-
-    if (nextUrl) {
-      window.location.href = nextUrl;
+    if (newUrl) {
+      window.location.href = newUrl;
     } else {
-      console.error("Invalid URL for next item");
-    }
-  }
-
-  // Function to navigate to the previous item
-  function navigateToPrevItem() {
-    var currentPosition = getCurrentItemPosition();
-    console.log("Current Position:", currentPosition);
-
-    var prevPosition = currentPosition - 1;
-    var prevUrl = findItemUrlByPosition(prevPosition);
-    console.log("Previous URL:", prevUrl);
-
-    if (prevUrl) {
-      window.location.href = prevUrl;
-    } else {
-      console.error("Invalid URL for previous item");
+      console.error(
+        "Invalid URL for the requested item position:",
+        newPosition
+      );
     }
   }
 
@@ -52,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var galleryInfo = getGalleryInfo();
     console.log("Gallery Info:", galleryInfo);
 
-    var currentItemHref = window.location.pathname.split("/").pop(); // Extracting the last part of the path
+    var currentItemHref = window.location.pathname.split("/").pop();
     console.log("Current Item Href:", currentItemHref);
 
     var currentItem = galleryInfo.find((item) => item.href === currentItemHref);
@@ -85,11 +66,15 @@ document.addEventListener("DOMContentLoaded", function () {
   // Add event listeners to arrow buttons
   var nextButton = document.getElementById("nextButton");
   if (nextButton) {
-    nextButton.addEventListener("click", navigateToNextItem);
+    nextButton.addEventListener("click", function () {
+      navigateToItem(1); // Move to the next item
+    });
   }
 
   var prevButton = document.getElementById("prevButton");
   if (prevButton) {
-    prevButton.addEventListener("click", navigateToPrevItem);
+    prevButton.addEventListener("click", function () {
+      navigateToItem(-1); // Move to the previous item
+    });
   }
 });
