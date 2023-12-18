@@ -26,10 +26,32 @@ function storeGalleryInfo() {
   }
 }
 
-// Call the storeGalleryInfo function when the page loads
-document.addEventListener("DOMContentLoaded", function () {
-  storeGalleryInfo();
-});
+// Function to retrieve the current item's position from the stored data
+function getCurrentItemPosition() {
+  // Retrieve the stored gallery information
+  var storedGalleryInfo = JSON.parse(localStorage.getItem("galleryInfo"));
+
+  // Check if the information is found
+  if (storedGalleryInfo) {
+    // Find the current item's position based on the current URL
+    var currentItemHref = window.location.href;
+    var currentItem = storedGalleryInfo.find(
+      (item) => item.href === currentItemHref
+    );
+
+    // Check if the current item is found
+    if (currentItem) {
+      return currentItem.position;
+    }
+  }
+
+  // Return a default value or handle the case when the information is not found
+  console.log("Current Position not found. Defaulting to 1.");
+  return 1; // Default position (adjust as needed)
+}
+
+// Call the storeGalleryInfo function to store the information when the page loads
+storeGalleryInfo();
 
 // Function to navigate to the next item
 function navigateToNextItem() {
