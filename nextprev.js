@@ -83,6 +83,9 @@ function getCurrentItemPosition() {
   // Retrieve the stored gallery information
   var storedGalleryInfo = JSON.parse(localStorage.getItem("galleryInfo"));
 
+  // Log the stored gallery information to check its content
+  console.log("Stored Gallery Info:", storedGalleryInfo);
+
   // Check if the information is found
   if (storedGalleryInfo) {
     // Find the current item's position based on the current URL
@@ -93,11 +96,15 @@ function getCurrentItemPosition() {
 
     // Check if the current item is found
     if (currentItem) {
-      return currentItem.position;
+      // Ensure currentPosition is correctly defined
+      var currentPosition = currentItem.position;
+      console.log("Current Position:", currentPosition);
+      return currentPosition;
     }
   }
 
   // Return a default value or handle the case when the information is not found
+  console.error("Current Position not found. Defaulting to 1.");
   return 1; // Default position (adjust as needed)
 }
 
