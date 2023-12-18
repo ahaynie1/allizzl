@@ -2,30 +2,22 @@
 
 console.log("Next Previous Buttons script loaded");
 
-// Function to store the gallery information
+// Function to store the gallery information in local storage
 function storeGalleryInfo() {
-  // Select all gallery items
+  // Select all gallery items on the page
   var galleryItems = document.querySelectorAll(".gallery-item");
-
-  // Log the selected gallery items
-  console.log("Gallery Items:", galleryItems);
 
   // Create an array to store gallery information
   var galleryInfo = [];
 
-  // Iterate through gallery items and extract information
+  // Iterate over each gallery item and store data directly in local storage
   galleryItems.forEach(function (item, index) {
-    var position = index + 1; // Assuming positions start from 1
+    var position = index;
     var href = item.getAttribute("href");
-
-    // Store information in the array
     galleryInfo.push({ position: position, href: href });
   });
 
-  // Log the gallery information
-  console.log("Gallery Info:", galleryInfo);
-
-  // Store the gallery information in local storage
+  // Store the galleryInfo array in local storage
   try {
     localStorage.setItem("galleryInfo", JSON.stringify(galleryInfo));
     console.log("Gallery Info Stored:", galleryInfo);
