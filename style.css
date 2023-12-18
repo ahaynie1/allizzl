@@ -153,6 +153,8 @@ nav a {
   /* align-items: center; */
   max-width: 80%;
   margin: 0 auto;
+  /* background: #e8e8e1; */
+
 }
 
 .L {
@@ -361,7 +363,7 @@ p {
   /* Allow items to wrap to the next row */
   margin: 10px;
   padding: 10px;
-  /* background: #2E2D4D; */
+  background: #d49c04;
 }
 
 
@@ -386,11 +388,14 @@ p {
   width: calc(50%);
 }
 
+
 .overlap {
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  margin-top: calc(-22vh);
+}
 }
 
 @keyframes rotateCounterclockwise {
@@ -482,7 +487,7 @@ p {
   display: flex;
   flex-direction: column;
   margin-left: 10%;
-  margin-right: 10%;
+  margin-right: 12%;
 }
 
 .item-info {
@@ -521,10 +526,12 @@ p {
   margin-bottom: -2.5rem; */
 }
 
-/* .swoop-png {
-  width: calc(50%);
-  padding: 2rem;
-} */
+.swoop-png {
+  margin-left: 10%;
+  margin-right: 10%;
+  width: calc(25%);
+
+}
 
 #downloadprompt {
   display: flex;
