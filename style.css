@@ -544,6 +544,16 @@ iframe {
   height: 25rem;
   /* width: calc(50% - 20px); */
 
+}
+
+.iframe-container {
+  width: 50%;
+}
+
+.case {
+  width: 100%;
+
+
 
   /* 
 .page-header {
