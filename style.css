@@ -93,6 +93,9 @@ nav {
   align-items: center;
   justify-content: right;
   margin-right: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .icons {
@@ -488,6 +491,14 @@ p {
   flex-direction: column;
   margin-left: 10%;
   margin-right: 12%;
+  /* align-items: center; */
+}
+
+
+.photo-caption {
+  font-size: 1.5rem;
+  font-weight: 200;
+  margin-top: .25rem;
 }
 
 .item-info {
@@ -516,6 +527,7 @@ p {
   font-weight: 200;
   font-size: 1.5rem;
 }
+
 
 .tools {
   font-family: author;
