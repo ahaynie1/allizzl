@@ -16,6 +16,19 @@ body {
   font-family: author;
 }
 
+.landing {
+  background: #FFEBA5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -.5rem;
+  height: 100vh;
+}
+
+#little-alli {
+  max-width: 1000px;
+}
+
 .resume-container {
   display: flex;
   flex-direction: inline;
@@ -188,10 +201,6 @@ nav a {
 /* #arrow styles */
 
 
-#little-alli {
-  max-width: 600px;
-
-}
 
 .center-con {
   display: flex;
@@ -267,16 +276,16 @@ nav a {
 
 
 /* next and prev button styles */
-button {
-  background: none;
-}
+button {}
 
 #nextButton {
   rotate: -90deg;
+  background: none;
 }
 
 #prevButton {
   rotate: 90deg;
+  background: none;
 }
 
 #prevButton span:nth-child(2) {
@@ -309,7 +318,8 @@ h1 {
 
   /* Big! */
   font-family: Author;
-  font-size: 3rem;
+  /* font-size: 3rem; */
+  font-size: 6rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -369,7 +379,7 @@ p {
   /* Allow items to wrap to the next row */
   /* margin: 10px; */
   padding: 20px;
-  background: #d49c04;
+  /* background: #d49c04; */
 }
 
 
@@ -488,6 +498,7 @@ p {
   display: flex;
   margin-left: 10%;
   margin-bottom: -5%;
+  font-size: 3rem;
 }
 
 .case-study {
@@ -615,9 +626,7 @@ iframe {
       font-size: .75rem;
     }
 
-    #little-alli {
-      max-width: 400px;
-    }
+
 
     /* gallery page mobile layout */
     .grid-container {
