@@ -35,6 +35,11 @@ body {
 /* #landing div {
   position: absolute;
 } */
+#landing-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
 
 .landing button {
   width: 10rem;
@@ -53,7 +58,8 @@ body {
 
 #little-alli {
   max-width: 1000px;
-  /* position: absolute; */
+  margin-left: 25rem;
+  position: absolute;
 }
 
 .resume-container {
@@ -352,8 +358,7 @@ h1 {
   font-size: 8rem;
   font-style: normal;
   font-weight: 700;
-  line-height: normal;
-
+  line-height: 3;
   width: 35.875rem;
   height: 6.8125rem;
   flex-shrink: 0;
@@ -390,17 +395,33 @@ p {
   line-height: normal;
 }
 
+/* niche container */
 #niche {
   font-family: Author;
   font-style: normal;
   height: 26.25rem;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
+/* niche content */
 #niche p {
   color: #846700;
   font-size: 4rem;
   font-weight: 596;
   line-height: normal;
+  animation: marquee 20s linear infinite;
+}
+
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 /* PORTFOLIO ITEMS */
