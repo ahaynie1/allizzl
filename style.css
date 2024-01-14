@@ -27,7 +27,7 @@ body {
   margin-top: -6.25rem;
   height: 100vh;
   padding-left: 10rem;
-  padding-right: 10rem;
+  /* padding-right: 10rem; */
 
   /* position: relative; */
 }
@@ -399,7 +399,7 @@ p {
 #niche {
   font-family: Author;
   font-style: normal;
-  height: 26.25rem;
+  /* height: 26.25rem; */
   overflow: hidden;
   white-space: nowrap;
 }
@@ -409,14 +409,20 @@ p {
   color: #846700;
   font-size: 4rem;
   font-weight: 596;
-  line-height: normal;
+  line-height: .5;
+}
+
+.marquee {
   animation: marquee 20s linear infinite;
 }
 
+/* .delay {
+  animation: marquee 20s 20s linear infinite;
+} */
 
 @keyframes marquee {
   0% {
-    transform: translateX(100%);
+    transform: translateX(00%);
   }
 
   100% {
