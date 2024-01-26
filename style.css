@@ -111,21 +111,26 @@ body {
 
 
 h3 {
-  font-size: 1.5rem;
+  color: #000;
+  font-family: Author;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
-h4 {
+h5 {
   font-family: author;
   font-weight: 300;
   font-size: 1.2rem;
   margin-top: -1rem;
 }
 
-h5 {
+/* h5 {
   font-family: author;
   font-weight: 300;
   font-size: 1rem;
-}
+} */
 
 h6 {
   font-family: author;
@@ -464,8 +469,19 @@ p {
   max-width: 100%;
 }
 
-.case-image {
+.image-container {
+  background: #DBB8E8;
+  height: 100vh;
   width: calc(50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.case-image {
+  /* width: calc(50%); */
+  max-height: 80vh;
+  max-width: fit-content;
 }
 
 @keyframes appear {
@@ -565,15 +581,34 @@ p {
   font-size: 3rem;
 }
 
-.case-study {
+.section1 {
   display: flex;
   flex-direction: row;
-  margin-left: 10%;
+  /* margin-left: 10%;
   margin-right: 10%;
   margin-top: 5%;
-  margin-bottom: 5%;
+  margin-bottom: 5%; */
   align-items: flex-start;
+  height: 100vh;
+  background: #FCDE73;
   /* justify-content: center; */
+}
+
+.section2 {
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pullquote {
+  background: #FFF7DA;
+  border-radius: 1.9375rem;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding: 4rem;
+  /* height: 24rem; */
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .case-overflow {
@@ -591,16 +626,24 @@ p {
   margin-top: .25rem;
 }
 
+.info-container {
+  height: 100vh;
+  display: flex;
+  padding: 2rem;
+  align-items: end;
+}
+
 .item-info {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  padding-bottom: 30%;
 }
 
 .case-study * {
   flex: 1 0 calc(33.333% - 2rem);
   margin-bottom: -1rem;
-  padding-right: 2rem;
+  /* padding-right: 2rem; */
   box-sizing: border-box;
 }
 
@@ -614,8 +657,14 @@ p {
 }
 
 .caption {
-  font-weight: 200;
+  /* font-weight: 200;
+  font-size: 1.5rem; */
+  color: #000;
+  font-family: Author;
   font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 375;
+  line-height: normal;
 }
 
 
