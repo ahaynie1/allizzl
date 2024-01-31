@@ -169,6 +169,11 @@ nav {
   margin: .5rem;
 }
 
+.tools img {
+  height: 3rem;
+  margin: .5rem;
+}
+
 .nav-icons {
   display: flex;
   align-items: center;
@@ -486,7 +491,8 @@ p {
 .case-image {
   /* width: calc(50%); */
   max-height: 80vh;
-  max-width: fit-content;
+  max-width: 80%;
+
 }
 
 @keyframes appear {
@@ -637,6 +643,7 @@ p {
   padding: 2rem;
   align-items: start;
   flex-direction: column;
+
 }
 
 .item-info {
