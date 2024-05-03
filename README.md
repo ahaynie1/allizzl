@@ -1,11 +1,10 @@
 # Portfolio Site
 
-My updated Design portfolio website (coming soon!)
+My (always in progress) Design portfolio website
 
 - Layout practiced on CodePen.io. Original URL: [https://codepen.io/ahaynie/pen/qBLrbXM](https://codepen.io/ahaynie/pen/qBLrbXM).
 - Favicons from [#]
 - Arrow from by Brysen [http://codepen.io/brysenackx/pen/XjAAGR)]
 - Some CSS written through discussion with [#] ChatGPT
 - JS event listener for scrolling on click was also written by ChatGPT
-- Circle type by Copyright © 2014-2020 Peter Hrynkow, Licensed MIT
 - Resume Skills icons from Wikimedia Commons
